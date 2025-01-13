@@ -2,8 +2,11 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import './index.css'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'; // Import necessary components
-import Welcome from './Pages/welcome/Welcome';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'; 
+import HomePage from './Pages/Homepage/HomePage';
+import Welcome from './Pages/Welcome/Welcome';
+
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -12,9 +15,14 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/welcome" element={<Welcome />} />
+        <Route path='/home' element={<HomePage/>} />
+        <Route path='/login' element={<Welcome/>} />
+
+
+
+       
 
       </Routes>
     </BrowserRouter>
-  </React.StrictMode>,
+  </React.StrictMode>
 )
