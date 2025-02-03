@@ -1,0 +1,103 @@
+/* Card Component Styling */
+.card {
+  background-color: #fff; /* White background for the card */
+  padding: 20px; /* Padding inside the card */
+  border: 1px solid #000; /* Light border for definition */
+  border-radius: 10px; /* Rounded corners */
+  text-align: center; /* Center-align content */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+  max-width: 320px; /* Adjusted card width for consistency */
+  margin: 1rem auto; /* Center the card and add spacing */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Image Styling */
+.card-image {
+  width: 100%; /* Full-width image */
+  
+  object-fit: cover; /* Ensure image is cropped correctly */
+  border-radius: 8px; /* Rounded corners for image */
+  margin-bottom: 1rem; /* Space below the image */
+  border: 1px solid #ccc; /* Subtle border for the image */
+}
+
+/* Card Content Styling */
+.card-content {
+  flex-grow: 1; /* This pushes the button to the bottom */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.5rem; /* Adjusted padding for better spacing */
+}
+
+/* Card Title Styling */
+.card-title {
+  margin-bottom: 0.5rem; /* Space below the title */
+  font-size: 1.4rem; /* Slightly larger title font size */
+  font-weight: bold; /* Make the title bold */
+  color: #000; /* Slightly lighter black for text */
+}
+
+/* Card Description Styling */
+.card-description {
+  margin-bottom: 0; /* Space below each description */
+  font-size: 1rem; /* Description font size */
+  color: #555; /* Medium gray color for text */
+  line-height: 1.5; /* Improved line spacing */
+}
+
+/* Card Button Styling */
+.card-button {
+  margin-top: 10px;
+  align-self: center;
+  padding: 0.8rem 1.5rem; /* Padding for the button */
+  background-color: #000; /* Dark background color */
+  color: #fff; /* White text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1rem; /* Font size for the button */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth background and transform effects */
+}
+
+/* Button Hover Effect */
+.card-button:hover {
+  background-color: #444; /* Slightly lighter gray on hover */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+/* Card Hover Effect */
+.card:hover {
+  background-color: #d4d0aa; /* Subtle background change on hover */
+  transform: translateY(-8px); /* Lift the card slightly on hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow effect */
+}
+
+/* Responsive Design for Cards */
+@media (max-width: 768px) {
+  .card {
+      padding: 1rem; /* Adjust padding for smaller screens */
+  }
+
+  .card-title {
+      font-size: 1.2rem; /* Smaller title font size */
+  }
+
+  .card-description {
+      font-size: 0.9rem; /* Smaller description font size */
+  }
+
+  .card-button {
+      font-size: 0.9rem; /* Adjust button font size */
+      padding: 0.6rem 1rem; /* Adjust button padding */
+  }
+}
+
+/* Additional Styling for Contact Information */
+.card-description strong {
+  color: #4a4646; /* Highlight labels in bold black */
+}
