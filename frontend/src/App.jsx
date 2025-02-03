@@ -1,21 +1,15 @@
-import React from 'react';
-import logo from './assets/logo.png';
-import './App.css';
-import { useNavigate } from 'react-router-dom';
+import './App.css'
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import Layout from './components/layout/Layout'
+
 function App() {
-
-  const navigate = useNavigate();
-
-  const navigateToHomePage = () =>{
-    navigate('/home')
-  }
-  return ( 
-    <div className="app-container">
-      <img src={logo} alt="Haventrace Logo" className="app-logo" onClick={navigateToHomePage}/>
+  return (
+    <div id="root">
+      <Layout />
     </div>
   );
 }
 
 
+export default App
 
-export default App;
