@@ -1,0 +1,69 @@
+  .emergency-numbers-container {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #d4d0aa, #b3a185, #cdc3bd);
+    border-radius: 20px;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .cardscontainer {
+    display: flex;
+    gap: 20px; /* Space between cards */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allows cards to wrap to the next row */
+  }
+  
+  .cards {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 200px;
+  }
+
+  .cards:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #ff5722;
+  }
+
+  .service {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 5px;
+  }
+
+  .number {
+    font-size: 1.2rem;
+    color: #666;
+    font-weight: bold;
+  }
+
+  /* Media Queries */
+  @media (max-width: 1024px) {
+    .cards {
+      flex: 1 1 calc(50% - 20px); /* 2 cards per row */
+      max-width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .cards {
+      flex: 1 1 100%; /* 1 card per row */
+      max-width: 100%;
+    }
+  } 

@@ -1,0 +1,222 @@
+/* Parent Dashboard Layout */
+.parent-dashboard {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background: white;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 250px;
+    background: white;
+    color: #d4d0aa;
+    transition: width 0.3s ease;
+    overflow: hidden;
+    height: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar.closed {
+    width: 60px;
+  }
+  
+  .sidebar.open {
+    width: 250px;
+  }
+  
+  .sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background: white;
+  }
+  
+  .sidebar-title {
+    font-size: 1.2rem;
+    color: black;
+  }
+  
+  .toggle-button {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  /* Sidebar Menu */
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    padding: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+    background-color: transparent;
+    color: black;
+  }
+  
+  .menu li:hover,
+  .menu li.active {
+    background-color: #d4d0aa !important;
+  }
+  
+  /* Content Area */
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+    background: #d4d0aa;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Standardized Page Styling */
+  .standard-page {
+    width: 100%;
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centering the content */
+    text-align: right;
+  }
+  
+  /* Centering the Heading */
+  .standard-page h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Photo Upload Section */
+  .photo-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .photo-label {
+    background-color: #1a252f;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .photo-input {
+    display: none;
+  }
+  
+  /* Remove Change Photo Button */
+  .photo-label::after {
+    content: "Upload Photo";
+  }
+  
+  .photo-preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .profile-photo {
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    margin-top: 10px;
+  }
+  
+  .delete-photo {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .delete-photo:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Flexbox Layout for Parent Details */
+  .details-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+    gap: 30px;
+  }
+  
+  /* Left Section - Profile Photo */
+  .photo-section {
+    width: 30%;
+    text-align: center;
+  }
+  
+  /* Right Section - Parent Information */
+  .info-section {
+    width: 65%;
+    text-align: left;
+  }
+  
+  .info-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .info-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .info-section li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .info-section strong {
+    color: #000;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 60px;
+    }
+    .sidebar.open {
+      width: 200px;
+    }
+  
+    .details-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .photo-section {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  
+    .info-section {
+      width: 80%;
+    }
+  }

@@ -1,0 +1,100 @@
+.police-page {
+    padding: 20px;
+    background-color: #d4d0aa;
+    font-family: Arial, sans-serif;
+  }
+
+  .police-page h1 {
+    text-align: center;
+    color: #1a252f;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .case-list {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    width: 100%;
+    max-width: 900px;
+    min-width: 900px;
+  }
+
+  .case-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .case-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .case-info {
+    display: flex;
+    align-items: center;
+  }
+
+  .case-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  .no-image {
+    width: 60px;
+    height: 60px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 0.8rem;
+    margin-right: 15px;
+  }
+
+  .case-text {
+    font-weight: bold;
+    color: #333;
+    line-height: 1.4;
+  }
+
+  .case-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .details-btn {
+    padding: 6px 12px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .details-btn:hover {
+    background-color: #ccc;
+    color: #000;
+  }
+
+  .status-update label {
+    margin-right: 5px;
+    font-weight: bold;
+  }
+
+  .status-update select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
