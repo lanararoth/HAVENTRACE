@@ -1,0 +1,70 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0px; /* Reduced the space at the bottom of the header */
+}
+
+.header-logo {
+  display: flex;
+  align-items: center; /* Aligns the logo and h1 vertically in the center */
+}
+
+.header-logo img {
+  width: 100px; /* Adjust the size of the logo */
+  height: auto; /* Keep the aspect ratio of the logo */
+  
+}
+
+.header-logo h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav-list {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #555;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn.login {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.btn.register {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.btn:hover {
+  background-color: #f7f7f7;
+}
+
+  
