@@ -1,0 +1,87 @@
+/* Missing Cases Page Container */
+.missing-cases-container {
+    padding: 20px;
+    background-color: #d4d0aa; /* Background color */
+  }
+  
+  .missing-cases-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Grid Layout for Cards */
+  .missing-cases-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Display 4 cards in a row */
+    gap: 20px; /* Space between cards */
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .spacer {
+    margin-top: 20px; /* Adds space above the missing cases grid */
+  }  
+  
+  /* Card Component Styling */
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 100%;
+    max-width: 350px; /* Limit maximum width */
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card-description {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .card-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card-button:hover {
+    background-color: #444;
+  }
+  
+  /* Responsive Grid */
+  @media (max-width: 768px) {
+    .missing-cases-grid {
+      grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
+  
+    .card {
+      max-width: 100%; /* Adjust width for smaller screens */
+    }
+  }
+  
