@@ -1,0 +1,28 @@
+/* src/styles/PoliceDetails.css */
+.police-details-page {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .police-details-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .police-details-page p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  .back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .back-link:hover {
+    text-decoration: underline;
+  }
