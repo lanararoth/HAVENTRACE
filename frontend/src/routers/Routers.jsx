@@ -11,6 +11,7 @@ import Admin from '../pages/Admin';
 import Parent from '../pages/Parent';
 import Police from '../pages/Police';
 import PoliceDetails from '../pages/PoliceDetails';
+import PoliceList from '../pages/PoliceList';
 
 const Routers = () => {
   return (
@@ -21,7 +22,8 @@ const Routers = () => {
       <Route path="/register" element={< Register />} />
       <Route path="/emergency" element={<EmergencyNumbers />} />
       <Route path="/upload" element={<Upload />} />
-      <Route path="/stations" element={<PoliceDetails />} />
+      <Route path="/stations" element={<PoliceList />} />
+      <Route path="/stations/:id" element={<PoliceDetails />} />
       <Route path="/missing" element={<MissingCases />} />
       <Route path="/details/:id" element={<MissingDetails />} />
       <Route path="/parent" element={<Parent />} />
@@ -32,3 +34,4 @@ const Routers = () => {
 };
 
 export default Routers;
+
