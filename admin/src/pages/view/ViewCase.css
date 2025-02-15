@@ -1,0 +1,103 @@
+.view-case-container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff !important; /* White background */
+  border-radius: 15px !important;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  font-family: 'Arial', sans-serif !important;
+}
+
+.case-card {
+  background: #f9f9f9 !important;
+  padding: 20px !important;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+  width: 100% !important;
+  max-width: 800px !important;
+  text-align: center !important;
+}
+
+.card-heading {
+  font-size: 2.5rem !important;
+  font-weight: bold !important;
+  text-align: center !important;
+  color: #222 !important;
+  margin-bottom: 15px !important;
+}
+
+.case-details {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 20px !important;
+  gap: 20px !important;
+}
+
+.case-details img {
+  width: 250px !important;
+  height: auto !important;
+  object-fit: cover !important;
+  border-radius: 10px !important;
+  border: 2px solid #ddd !important;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+.parent-details {
+  flex: 1 !important;
+  padding: 20px !important;
+  text-align: center !important;
+}
+
+.parent-details p {
+  font-size: 1.1rem !important;
+  color: #444 !important;
+  margin-bottom: 10px !important;
+  line-height: 1.6 !important;
+}
+
+.parent-details strong {
+  color: #111 !important;
+}
+
+.back-button {
+  display: inline-block !important;
+  margin-top: 20px !important;
+  padding: 12px 24px !important;
+  background-color: #007bff !important;
+  color: white !important;
+  text-decoration: none !important;
+  border-radius: 8px !important;
+  text-align: center !important;
+  transition: 0.3s ease-in-out !important;
+  font-size: 1rem !important;
+  font-weight: bold !important;
+}
+
+.back-button:hover {
+  background-color: #0056b3 !important;
+  color: #fff !important;
+}
+
+@media (max-width: 768px) {
+  .view-case-container {
+      flex-direction: column !important;
+  }
+
+  .case-details {
+      flex-direction: column !important;
+      align-items: center !important;
+  }
+
+  .parent-details {
+      text-align: center !important;
+  }
+
+  .card-heading {
+      font-size: 2rem !important;
+  }
+}

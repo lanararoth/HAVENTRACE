@@ -1,0 +1,78 @@
+.upload-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #d4d0ab;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+    width: 100%;
+}
+
+.upload-title {
+    font-size: 30px; /* Added px unit */
+    color: #333;
+    margin-bottom: 20px; /* Added margin for spacing */
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between input and button */
+    width: 100%;
+    margin-bottom: 15px;
+    border: #000;
+}
+
+.upload-input {
+    flex: 1; /* Take up remaining space */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.camera-button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.camera-button:hover {
+    background-color: #777; /* Adjusted hover color */
+}
+
+.upload-preview {
+    margin-top: 15px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.error-message {
+    color: #dc3545;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.upload-button{
+    background-color: #555;
+    color: #fff;
+}
+
+.upload-button:hover{
+    background-color: #ccc;
+    color: #000;
+}

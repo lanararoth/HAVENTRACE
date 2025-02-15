@@ -1,0 +1,205 @@
+/* Home Container */
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100%; /* Ensure it fits the full viewport height */
+  text-align: center;
+  background: #D4D0AA;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+  max-width: 1700px;
+}
+
+/* Home Container Heading */
+.home-container h1 {
+  color: #000; /* Matches the header gradient */
+  font-size: 2.5rem;
+}
+
+.home-container p {
+  color: #555;
+  font-size: 1.2rem;
+}
+section {
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero Section */
+.hero-section {
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+  position: relative;
+  border-radius: 0;
+  background-color: #D4D0AA;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically centers the content */
+  align-items: center; /* Horizontally centers the content */
+  margin-top: -20px;
+}
+
+/* Hero Content */
+.hero-content {
+  text-align: center;
+}
+
+.hero-title {
+  margin-bottom: 10px;
+}
+
+.hero-description {
+  margin-top: 10px;
+}
+
+/* Search Bar Container */
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  position: relative;
+}
+
+/* Search Bar */
+.search-bar {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px; /* Square corners */
+  border: 1px solid #ccc;
+  width: 350px; /* Adjust width */
+  box-sizing: border-box;
+}
+
+/* Search Button */
+.search-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px; /* Square corners */
+  border: 1px solid #000000;
+  background-color: #000;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 10px; /* Adds space between search bar and button */
+}
+
+/* Button Hover Effect */
+.search-button:hover {
+  background-color: #555;
+  color: #000;
+}
+
+.no-results {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ff0000;
+  margin-top: 20px;
+}
+
+.card-section {
+  flex: 1; /* Allows the card section to take up available space */
+  padding: 2rem 0;
+  background-color: #D4D0AA;
+  
+}
+
+
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Display 3 cards in a row */
+  gap: 20px;
+  justify-content: space-evenly;
+  align-items: center; /* Align items vertically */
+  flex-wrap: wrap; /* Allow cards to wrap to the next row */
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 100%; /* Allow cards to shrink and grow */
+  max-width: 300px; /* Limit maximum width */
+  text-align: center;
+  position: relative;
+  flex: 0 0 auto; /* Ensure the z-index works */
+}
+
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #555;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.more-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.more-link {
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none; /* Remove underline */
+  color: #000;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.more-link:hover {
+  color: #555; /* Change color on hover */
+}
+
+.arrow {
+  margin-left: 10px;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.more-link:hover .arrow {
+  transform: translateY(3px); /* Adds a slight bounce effect */
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .home-container, .hero-section {
+    padding: 20px;
+    height: auto;
+  }
+  .card-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .card {
+    max-width: 90%; /* Make cards smaller for mobile screens */
+    margin: 0 auto; /* Center cards horizontally */
+  }
+}

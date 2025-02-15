@@ -1,0 +1,68 @@
+/* src/styles/ContactUs.css */
+.contactus-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1024px;
+    width: 100%;
+    margin-top: 100px; /* Adds more spacing */
+    color: #555;
+}
+
+  
+  .contactus-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #555;
+
+  }
+  
+  .contactus-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1024px;
+    width: 100%;
+  }
+  
+  .contact-box {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+  }
+  
+  .contact-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact-box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #007bff;
+  }
+  
+  .contact-box p {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .contact-box a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .contact-box a:hover {
+    text-decoration: underline;
+  }

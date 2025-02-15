@@ -1,0 +1,115 @@
+/* General Dashboard Styles */
+.dashboard {
+  padding: 2rem !important;
+  background: #d4d0aa !important;
+  font-family: 'Arial', sans-serif !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 1.5rem !important;
+}
+
+.dashboard-title {
+  font-size: 1.8rem !important;
+  color: #333 !important;
+  font-weight: bold !important;
+}
+
+/* Dashboard Widgets */
+.dashboard-widgets-horizontal {
+  display: flex !important;
+  gap: 1.5rem !important;
+  justify-content: space-between !important;
+  flex-wrap: wrap !important;
+}
+
+.widget {
+  background: #f0f0f0 !important;
+  padding: 1.5rem !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+  text-align: center !important;
+  flex: 1 1 30% !important;
+  max-width: 300px !important;
+  margin-bottom: 30px !important;
+}
+
+.widget h3 {
+  font-size: 1.2rem !important;
+  margin-bottom: 0.8rem !important;
+  color: #4a4a4a !important;
+}
+
+.widget p {
+  font-size: 1rem !important;
+  color: #666 !important;
+}
+
+/* Parent Container for Quick Actions and Notifications */
+.actions-and-notifications {
+  display: flex !important;
+  gap: 1.5rem !important; /* Spacing between the two boxes */
+  margin-top: 1.5rem !important;
+}
+
+/* Quick Actions */
+.quick-actions,
+.notifications {
+  flex: 1 !important; /* Makes the boxes take equal width */
+  background: #d4d0aa !important;
+  padding: 1rem !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+}
+
+.quick-actions h2,
+.notifications h2 {
+  font-size: 1.5rem !important;
+  margin-bottom: 1rem !important;
+}
+
+/* Quick Actions Buttons */
+.quick-actions-buttons {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important; /* Add spacing between buttons */
+  justify-content: center !important; /* Center align the buttons */
+  align-items: center !important;
+}
+
+.action-button {
+  width: 300px !important;
+  padding: 10px !important;
+}
+
+.action-button button {
+  background: #f0f0f0 !important;
+  color: #000 !important;
+  border: none !important;
+  padding: 10px 20px !important; /* Adjust padding for consistent size */
+  border-radius: 5px !important;
+  cursor: pointer !important;
+  transition: background-color 0.2s !important;
+  font-size: 1rem !important; /* Make font size consistent */
+}
+
+.action-button button:hover {
+  background: #555 !important;
+  color: #000 !important;
+}
+
+/* Notifications */
+.notifications-list {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+}
+
+.notification-item {
+  padding: 20px !important;
+  background: #f0f0f0 !important;
+  border: 1px solid #ddd !important;
+  border-radius: 8px !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
