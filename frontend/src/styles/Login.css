@@ -104,3 +104,11 @@
   .login-box p a:hover {
     text-decoration: underline;
   }
+
+  .error-message {
+    color: #ff0000;
+  }
+
+  .error {
+    color: #ff0000;
+  }

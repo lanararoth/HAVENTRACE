@@ -9,8 +9,8 @@ const Admin = () => {
 
   // Hardcoded Admin Credentials (Replace with API)
   const adminCredentials = {
-    username: "admin",
-    password: "admin123",
+    username: "Admin",
+    password: "123@Admin@HT",
   };
 
   const handleLogin = (e) => {

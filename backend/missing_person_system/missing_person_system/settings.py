@@ -147,4 +147,34 @@ REST_FRAMEWORK = {
 # Custom User Model
 AUTH_USER_MODEL = 'registration.User'
 
-CORS_ALLOW_ALL_ORIGINS = True  # Allow all domains (for development)
+# CORS settings
+CORS_ALLOW_ALL_ORIGINS = False  # Disable wildcard origin
+CORS_ALLOW_CREDENTIALS = True  # Allow credentials (cookies, authorization headers)
+
+# Allow specific origins
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:5001",  # Add your frontend URL here
+    "http://localhost:3001",  # Admin origin
+]
+
+# Optional: Allow specific headers and methods
+CORS_ALLOW_METHODS = [
+    'DELETE',
+    'GET',
+    'OPTIONS',
+    'PATCH',
+    'POST',
+    'PUT',
+]
+
+CORS_ALLOW_HEADERS = [
+    'accept',
+    'accept-encoding',
+    'authorization',
+    'content-type',
+    'dnt',
+    'origin',
+    'user-agent',
+    'x-csrftoken',
+    'x-requested-with',
+]

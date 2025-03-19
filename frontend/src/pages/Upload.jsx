@@ -90,9 +90,15 @@ const Upload = () => {
             </div>
             {error && <p className="error-message">{error}</p>}
             {image && <img src={image} alt="Uploaded Preview" className="upload-preview" />}
-            <button onClick={handleUpload} className="upload-button" disabled={loading}>
-                {loading ? "Processing..." : "Predict"}
+            <button 
+                onClick={prediction ? () => window.location.reload() : handleUpload} 
+                className="upload-button" 
+                disabled={loading}
+            >
+                {loading ? "Processing..." : prediction ? "Reset" : "Predict"}
             </button>
+
+
 
             {prediction && (
                 <div className="prediction-result">
@@ -103,7 +109,7 @@ const Upload = () => {
                             <p><strong>Gender:</strong> {prediction.details.gender}</p>
                             <p><strong>Parent:</strong> {prediction.details.parent}</p>
                             <p><strong>Contact:</strong> {prediction.details.contact}</p> {/* ✅ Added Contact */}
-                            <p><strong>Similarity Score:</strong> {prediction.details.similarity_score.toFixed(6)}</p>
+                            <p><strong>Match Score:</strong> {prediction.details.similarity_score.toFixed(6)}</p>
                         </div>
                     ) : (
                         <p>{prediction.details}</p>

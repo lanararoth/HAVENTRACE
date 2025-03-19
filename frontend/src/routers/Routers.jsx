@@ -23,6 +23,7 @@ const Routers = () => {
       <Route path="/register" element={< Register />} />
       <Route path="/emergency" element={<EmergencyNumbers />} />
       <Route path="/upload" element={<Upload />} />
+      <Route path="/contactus" element={<ContactUs />} />
       <Route path="/stations" element={<PoliceList />} />
       <Route path="/stations/:id" element={<PoliceDetails />} />
       <Route path="/missing" element={<MissingCases />} />
@@ -30,7 +31,6 @@ const Routers = () => {
       <Route path="/parent" element={<Parent />} />
       <Route path="/police" element={<Police />} />
       <Route path="/admin" element={<Admin />} />
-      <Route path="/contactus" element={<ContactUs />} />
     </Routes>
   );
 };

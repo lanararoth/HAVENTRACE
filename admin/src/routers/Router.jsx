@@ -14,7 +14,6 @@ import AddContact from "../pages/add/AddContact";
 import PoliceStation from "../pages/police/PoliceStation";
 import Users from "../pages/user/Users";
 
-
 const Router = () => {
   const [contacts, setContacts] = useState([]);
 

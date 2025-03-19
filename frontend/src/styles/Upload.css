@@ -4,14 +4,14 @@
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    background-color: #d4d0ab;
+    background: linear-gradient(135deg, #d4d0aa, #b3a185, #cdc3bd);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 400px;
     margin: auto;
     width: 100%;
 }
-
+ 
 .upload-title {
     font-size: 30px; /* Added px unit */
     color: #333;
@@ -36,8 +36,8 @@
 }
 
 .camera-button {
-    background-color: #555;
-    color: white;
+    background-color: transparent;
+    color: #000;
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
@@ -45,7 +45,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 16px;
+    font-size: 25px;
     transition: background-color 0.3s ease;
 }
 
@@ -76,3 +76,43 @@
     background-color: #ccc;
     color: #000;
 }
+
+.prediction-result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+}
+
+.prediction-result h2 {
+    font-size: 20px;
+    color: #4e4949;
+    margin-bottom: 15px;
+}
+
+.prediction-result p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.prediction-result strong {
+    color: #333;
+    font-weight: bold;
+}
+
+.prediction-result .details {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.prediction-result .details p {
+    margin: 5px 0;
+}
+

@@ -1,100 +1,280 @@
+/* src/styles/Police.css */
+
+/* Page Container */
 .police-page {
-    padding: 20px;
-    background-color: #d4d0aa;
-    font-family: Arial, sans-serif;
-  }
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  min-width: 90vw;
+}
 
-  .police-page h1 {
-    text-align: center;
-    color: #1a252f;
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  background: transparent;
+}
 
-  .case-list {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: auto;
-    width: 100%;
-    max-width: 900px;
-    min-width: 900px;
-  }
+.header h1 {
+  color: #1a252f;
+  font-size: 2rem;
+  margin: 0;
+}
 
-  .case-list ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+.logout-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  font-family: 'Times New Roman', Times, serif;
+}
 
-  .case-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 0;
-    border-bottom: 1px solid #ddd;
-  }
+.logout-button:hover {
+  background-color: #f7f7f7;
+}
 
-  .case-info {
-    display: flex;
-    align-items: center;
-  }
+/* Case List */
+.case-list {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  width: 90%;
+  max-width: 1200px;
+}
 
-  .case-image {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    border-radius: 4px;
-  }
+.case-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
-  .no-image {
-    width: 60px;
-    height: 60px;
-    background-color: #ccc;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 0.8rem;
-    margin-right: 15px;
-  }
+/* Case Item */
+.case-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+}
 
-  .case-text {
-    font-weight: bold;
-    color: #333;
-    line-height: 1.4;
-  }
+.case-item:hover {
+  background-color: #f9f9f9;
+}
 
-  .case-actions {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
+.case-item:last-child {
+  border-bottom: none;
+}
 
-  .details-btn {
-    padding: 6px 12px;
-    background-color: #555;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
+/* Case Info */
+.case-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
 
-  .details-btn:hover {
-    background-color: #ccc;
-    color: #000;
-  }
+.case-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 
-  .status-update label {
-    margin-right: 5px;
-    font-weight: bold;
-  }
+.case-text {
+  font-weight: bold;
+  color: #333;
+}
 
-  .status-update select {
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-  }
+.case-text strong {
+  font-size: 1.1rem;
+  color: #1a252f;
+}
+
+/* Case Actions */
+.case-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.details-btn {
+  padding: 0.4rem 1rem;
+  border: none;
+  border-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.details-btn:hover {
+  background-color: #d4d0aa;
+}
+
+/* Status Update */
+.status-update {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.status-update label {
+  font-size: 0.9rem;
+  color: #555;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.status-update select {
+  padding: 0.4rem 1rem;
+  border: none;
+  border-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* No Cases Message */
+.no-cases {
+  text-align: center;
+  color: #777;
+  font-size: 1.1rem;
+}
+/* Add New Case Button */
+.add-case-btn {
+  padding: 0.4rem 1rem;
+  border: none;
+  border-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+
+.add-case-btn:hover {
+  background-color: #d4d0aa;
+}
+
+/* Case Form */
+.case-form {
+  background-color: #d4d0aa;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.case-form h2 {
+  margin-bottom: 15px;
+}
+
+.case-form input,
+.case-form select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family:'Times New Roman', Times, serif;
+  
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.save-btn,
+.cancel-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.save-btn {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.cancel-btn {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.save-btn:hover {
+  background-color: #d4d0aa;
+}
+
+.cancel-btn:hover {
+  background-color: #d4d0aa;
+}
+
+/* Edit Button */
+.edit-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.edit-btn:hover {
+  background-color: #d4d0aa;
+}
+
+.view-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  font-family: 'Times New Roman', Times, serif;
+}
+.delete-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 20px;
+  background-color: #e74c3c;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}

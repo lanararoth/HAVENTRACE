@@ -3,5 +3,5 @@ from .models import Police
 
 class PoliceSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Police
-        fields = '_all_'
+        model = Police  # Ensure this matches your actual model
+        fields = '__all__'  # OR provide a list/tuple like ('id', 'name', 'rank', 'station')
